@@ -1,6 +1,91 @@
+@import "_variables";
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background: peru;
-  a {
-    color: blue;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: $white;
+  height: 100vh;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: $fixedWidth;
+  height: 100%;
+  color: $red;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h1 {
+    width: 50%;
+    font-size: 50px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    letter-spacing: 5px;
+  }
+  .bottom {
+    padding-bottom: 30px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h3 {
+      font-size: 30px;
+      width: 80%;
+    }
+    h4 {
+      font-size: 20px;
+    }
+    ul {
+      font-size: 15px;
+      width: 100%;
+      display: flex;
+      color: rgba(0, 0, 0, 0.5);
+      flex-wrap: wrap;
+      li {
+        width: max-content;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+        &:hover {
+          color: rgba(0, 0, 0, 1);
+        }
+      }
+    }
+  }
+}
+
+main {
+  margin-left: $fixedWidth;
+
+  .movie {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5) 5%,
+        transparent,
+        transparent,
+        transparent,
+        transparent
+      )
+      $red;
+    height: 100vh;
+    padding: 80px 50px;
+    .movie__header {
+      color: white;
+      font-size: 30px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+    img {
+      width: 100%;
+      box-shadow: 0 80px 80px -80px #000, 0 0 12px rgba(0, 0, 0, 0.06),
+        inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+    }
   }
 }
