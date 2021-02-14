@@ -88,5 +88,23 @@ main {
       box-shadow: 0 80px 80px -80px #000, 0 0 12px rgba(0, 0, 0, 0.06),
         inset 0 0 0 1px rgba(0, 0, 0, 0.2);
     }
+    .movie__like {
+      margin-top: 12px;
+      font-size: 20px;
+      display: flex;
+      justify-content: flex-end;
+      color: white;
+      div {
+        margin: 0 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        span {
+          margin-top: 5px;
+          font-size: 12px;
+        }
+      }
+    }
   }
 }
